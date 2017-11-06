@@ -28,13 +28,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 '''
 import logging
-from PyWBXMLDecoder import ASCommandResponse
+from PyWBXML import ASCommandResponse
 
 if __name__ == "__main__":
         import os
         logging.basicConfig(level=logging.INFO)
 
-        projectDir = os.path.dirname(os.path.realpath("PyWBXMLDecoder"))
+        projectDir = os.path.dirname(os.path.realpath("PyWBXML"))
         samplesDir = os.path.join(projectDir, "wbxml_samples/")
         listOfSamples = os.listdir(samplesDir)
 
